@@ -73,7 +73,7 @@ Wherever possible, mitigations should be provided in separate pull requests, one
 
 | URL | Mitigation of | Purpose | 
 | ----------- | ------------- | ----------- |
-| [https://github.com/your-repo/sample-contracts/pull/XXX](https://github.com/othernet-global/salty-io/commit/534d04a40c9b5821ad4e196095df70c0021d15ab) | H-01 | ManagedWallet has been removed | 
+| https://github.com/othernet-global/salty-io/commit/534d04a40c9b5821ad4e196095df70c0021d15ab | H-01 | ManagedWallet has been removed | 
 
 ## Out of Scope
 
