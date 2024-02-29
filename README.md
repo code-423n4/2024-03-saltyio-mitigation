@@ -75,36 +75,36 @@ Wherever possible, mitigations should be provided in separate pull requests, one
 | ----------- | ------------- | ----------- |
 | https://github.com/othernet-global/salty-io/commit/5766592880737a5e682bb694a3a79e12926d48a5 | H-01 | ManagedWallet has been removed. VestingWallet now just vests directly to teamWallet. | 
 | https://github.com/othernet-global/salty-io/commit/4f0c9c6a6e3e4234135ab7119a0e380af3e9776c | H-02 | performUpkeep is now called at the start of BootstrapBallot.finalizeBallot to reset the emissions timers just before liquidity rewards claiming is started.|
-| https://github.com/othernet-global/salty-io/commit/8e3231d3f444e9851881d642d6dd03021fade5ed | H-03 | The stablecoin framework: /stablecoin, /price_feed, WBTC/WETH collateral, PriceAggregator, price feeds and USDS have been removed.|
+| https://github.com/othernet-global/salty-io/commit/8e3231d3f444e9851881d642d6dd03021fade5ed | H-03 | The stablecoin framework has been removed: /stablecoin, /price_feed, WBTC/WETH collateral, PriceAggregator, price feeds and USDS.|
 | https://github.com/othernet-global/salty-io/commit/5f79dc4f0db978202ab7da464b09bf08374ec618 | H-04 | virtualRewards and userShare are now uint256 rather than uint128.|
-| https://github.com/othernet-global/salty-io/commit/8e3231d3f444e9851881d642d6dd03021fade5ed | H-05 | The stablecoin framework: /stablecoin, /price_feed, WBTC/WETH collateral, PriceAggregator, price feeds and USDS have been removed.|
-| https://github.com/othernet-global/salty-io/commit/8e3231d3f444e9851881d642d6dd03021fade5ed | H-06 | The stablecoin framework: /stablecoin, /price_feed, WBTC/WETH collateral, PriceAggregator, price feeds and USDS have been removed.|
+| https://github.com/othernet-global/salty-io/commit/8e3231d3f444e9851881d642d6dd03021fade5ed | H-05 | The stablecoin framework has been removed: /stablecoin, /price_feed, WBTC/WETH collateral, PriceAggregator, price feeds and USDS.|
+| https://github.com/othernet-global/salty-io/commit/8e3231d3f444e9851881d642d6dd03021fade5ed | H-06 | The stablecoin framework has been removed: /stablecoin, /price_feed, WBTC/WETH collateral, PriceAggregator, price feeds and USDS.|
 | https://github.com/othernet-global/salty-io/commit/b3b8cb955db2b9f0e47a4964e1e4f833a447a72d | M-01 | virtualRewards now rounded up on _decreaseUserShare |
 | https://github.com/othernet-global/salty-io/commit/5f1a5206a04b0f3fe45ad88a311370ce12fb0135 | M-02 | callFromDAO now wrapped in a try/catch |
 | https://github.com/othernet-global/salty-io/commit/ccf4368fcf1777894417fccd2771456f3eeaa81c | M-03 | There is now no limit to the number of tokens that can be proposed for whitelisting. Also, any whitelisting proposal that has reached quorum with sufficient approval votes can be executed. |
-| https://github.com/othernet-global/salty-io/commit/8e3231d3f444e9851881d642d6dd03021fade5ed | M-04 | The stablecoin framework: /stablecoin, /price_feed, WBTC/WETH collateral, PriceAggregator, price feeds and USDS have been removed.|
-| https://github.com/othernet-global/salty-io/commit/8e3231d3f444e9851881d642d6dd03021fade5ed | M-05 | The stablecoin framework: /stablecoin, /price_feed, WBTC/WETH collateral, PriceAggregator, price feeds and USDS have been removed.|
+| https://github.com/othernet-global/salty-io/commit/8e3231d3f444e9851881d642d6dd03021fade5ed | M-04 | The stablecoin framework has been removed: /stablecoin, /price_feed, WBTC/WETH collateral, PriceAggregator, price feeds and USDS.|
+| https://github.com/othernet-global/salty-io/commit/8e3231d3f444e9851881d642d6dd03021fade5ed | M-05 | The stablecoin framework has been removed: /stablecoin, /price_feed, WBTC/WETH collateral, PriceAggregator, price feeds and USDS.|
 | https://github.com/othernet-global/salty-io/commit/758349850a994c305a0ab9a151d00e738a5a45a0 | M-06 | ballotMaximumDuration added. There is now a default 30 day period after which ballots can be removed by any user. |
 | https://github.com/othernet-global/salty-io/commit/5766592880737a5e682bb694a3a79e12926d48a5 | M-07 | ManagedWallet has been removed. |
-| https://github.com/othernet-global/salty-io/commit/8e3231d3f444e9851881d642d6dd03021fade5ed | M-08 | The stablecoin framework: /stablecoin, /price_feed, WBTC/WETH collateral, PriceAggregator, price feeds and USDS have been removed.|
+| https://github.com/othernet-global/salty-io/commit/8e3231d3f444e9851881d642d6dd03021fade5ed | M-08 | The stablecoin framework has been removed: /stablecoin, /price_feed, WBTC/WETH collateral, PriceAggregator, price feeds and USDS.|
 | https://github.com/othernet-global/salty-io/commit/b01f6e5cb360e89f9e4cdae41d609ea747bcaa86 | M-09 | Fixes reserves DUST check |
 | https://github.com/othernet-global/salty-io/commit/c46069644739885fa36e84e27e1dd6362b854663 | M-11 | Ballots now keep track of their own requiredQuorum at the time they were created. |
 | https://github.com/othernet-global/salty-io/commit/39921b4a25041c7ac4e9b5279e12bb2ec518140b | M-12 | ballotNames now include all provided proposal arguments. |
-| https://github.com/othernet-global/salty-io/commit/8e3231d3f444e9851881d642d6dd03021fade5ed | M-13 | The stablecoin framework: /stablecoin, /price_feed, WBTC/WETH collateral, PriceAggregator, price feeds and USDS have been removed.|
+| https://github.com/othernet-global/salty-io/commit/8e3231d3f444e9851881d642d6dd03021fade5ed | M-13 | The stablecoin framework has been removed: /stablecoin, /price_feed, WBTC/WETH collateral, PriceAggregator, price feeds and USDS.|
 | https://github.com/othernet-global/salty-io/commit/ccf4368 | M-14 | Removed maxPendingTokensForWhitelisting. There is now no limit to the number of tokens that can be proposed for whitelisting. Also, any whitelisting proposal that has reached quorum with sufficient approval votes can be executed. |
-| https://github.com/othernet-global/salty-io/commit/8e3231d3f444e9851881d642d6dd03021fade5ed | M-15 | The stablecoin framework: /stablecoin, /price_feed, WBTC/WETH collateral, PriceAggregator, price feeds and USDS have been removed.|
+| https://github.com/othernet-global/salty-io/commit/8e3231d3f444e9851881d642d6dd03021fade5ed | M-15 | The stablecoin framework has been removed: /stablecoin, /price_feed, WBTC/WETH collateral, PriceAggregator, price feeds and USDS.|
 | https://github.com/othernet-global/salty-io/commit/a54656dd18135ca57eef7c4bf615b7cdff2613a7 https://github.com/othernet-global/salty-io/commit/53feaeb0d335bd33803f98db022871b48b3f2454 | M-16 | ArbitrageSearch updated as suggested with MSB as well |
-| https://github.com/othernet-global/salty-io/commit/8e3231d3f444e9851881d642d6dd03021fade5ed | M-18 | The stablecoin framework: /stablecoin, /price_feed, WBTC/WETH collateral, PriceAggregator, price feeds and USDS have been removed.|
+| https://github.com/othernet-global/salty-io/commit/8e3231d3f444e9851881d642d6dd03021fade5ed | M-18 | The stablecoin framework has been removed: /stablecoin, /price_feed, WBTC/WETH collateral, PriceAggregator, price feeds and USDS.|
 | https://github.com/othernet-global/salty-io/commit/758349850a994c305a0ab9a151d00e738a5a45a0 | M-19 | There is now a default 30 day period after which ballots can be removed by any user. |
 | https://github.com/othernet-global/salty-io/commit/eaf40ef0fa27314c6e674db6830990df68e5d70e | M-20 | POL has been removed from the protocol |
 | https://github.com/othernet-global/salty-io/commit/eaf40ef0fa27314c6e674db6830990df68e5d70e | M-21 | POL has been removed from the protocol |
-| https://github.com/othernet-global/salty-io/commit/8e3231d3f444e9851881d642d6dd03021fade5ed | M-22 | The stablecoin framework: /stablecoin, /price_feed, WBTC/WETH collateral, PriceAggregator, price feeds and USDS have been removed.|
+| https://github.com/othernet-global/salty-io/commit/8e3231d3f444e9851881d642d6dd03021fade5ed | M-22 | The stablecoin framework has been removed: /stablecoin, /price_feed, WBTC/WETH collateral, PriceAggregator, price feeds and USDS.|
 | https://github.com/othernet-global/salty-io/commit/44320a8cc9b94de433e437e025f072aa850b995a | M-25 | Zapping no longer uses scaling.  |
 | https://github.com/othernet-global/salty-io/commit/eaf40ef0fa27314c6e674db6830990df68e5d70e | M-26 | POL has been removed from the protocol |
-| https://github.com/othernet-global/salty-io/commit/8e3231d3f444e9851881d642d6dd03021fade5ed | M-27 | The stablecoin framework: /stablecoin, /price_feed, WBTC/WETH collateral, PriceAggregator, price feeds and USDS have been removed.|
+| https://github.com/othernet-global/salty-io/commit/8e3231d3f444e9851881d642d6dd03021fade5ed | M-27 | The stablecoin framework has been removed: /stablecoin, /price_feed, WBTC/WETH collateral, PriceAggregator, price feeds and USDS.|
 | https://github.com/othernet-global/salty-io/commit/0bb763cc67e6a30a97d8b157f7e5954692b3dd68 | M-28 | minAddedAmountA and minAddedAmountB are now used. |
-| https://github.com/othernet-global/salty-io/commit/8e3231d3f444e9851881d642d6dd03021fade5ed | M-29 | The stablecoin framework: /stablecoin, /price_feed, WBTC/WETH collateral, PriceAggregator, price feeds and USDS have been removed.|
-| https://github.com/othernet-global/salty-io/commit/8e3231d3f444e9851881d642d6dd03021fade5ed | M-30 | The stablecoin framework: /stablecoin, /price_feed, WBTC/WETH collateral, PriceAggregator, price feeds and USDS have been removed.|
+| https://github.com/othernet-global/salty-io/commit/8e3231d3f444e9851881d642d6dd03021fade5ed | M-29 | The stablecoin framework has been removed: /stablecoin, /price_feed, WBTC/WETH collateral, PriceAggregator, price feeds and USDS.|
+| https://github.com/othernet-global/salty-io/commit/8e3231d3f444e9851881d642d6dd03021fade5ed | M-30 | The stablecoin framework has been removed: /stablecoin, /price_feed, WBTC/WETH collateral, PriceAggregator, price feeds and USDS.|
 | https://github.com/othernet-global/salty-io/commit/5766592880737a5e682bb694a3a79e12926d48a5 | M-31 | ManagedWallet has been removed. |
 
 
