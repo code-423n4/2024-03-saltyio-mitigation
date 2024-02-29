@@ -79,7 +79,6 @@ Wherever possible, mitigations should be provided in separate pull requests, one
 | https://github.com/othernet-global/salty-io/commit/5f79dc4f0db978202ab7da464b09bf08374ec618 | H-04 | virtualRewards and userShare are now uint256 rather than uint128.|
 | https://github.com/othernet-global/salty-io/commit/8e3231d3f444e9851881d642d6dd03021fade5ed | H-05 | The stablecoin framework: /stablecoin, /price_feed, WBTC/WETH collateral, PriceAggregator, price feeds and USDS have been removed.|
 | https://github.com/othernet-global/salty-io/commit/8e3231d3f444e9851881d642d6dd03021fade5ed | H-06 | The stablecoin framework: /stablecoin, /price_feed, WBTC/WETH collateral, PriceAggregator, price feeds and USDS have been removed.|
-
 | https://github.com/othernet-global/salty-io/commit/b3b8cb955db2b9f0e47a4964e1e4f833a447a72d | M-01 | virtualRewards now rounded up on _decreaseUserShare |
 | https://github.com/othernet-global/salty-io/commit/5f1a5206a04b0f3fe45ad88a311370ce12fb0135 | M-02 | callFromDAO now wrapped in a try/catch |
 | https://github.com/othernet-global/salty-io/commit/ccf4368fcf1777894417fccd2771456f3eeaa81c | M-03 | There is now no limit to the number of tokens that can be proposed for whitelisting. Also, any whitelisting proposal that has reached quorum with sufficient approval votes can be executed. |
