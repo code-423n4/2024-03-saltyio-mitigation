@@ -112,8 +112,8 @@ Wherever possible, mitigations should be provided in separate pull requests, one
 
 ## Out of Scope
 
-Please list any High and Medium issues that were judged as valid but you have chosen not to fix.
-M-10
-M-17
-M-23
+Please list any High and Medium issues that were judged as valid but you have chosen not to fix. \
+M-10 \
+M-17 \
+M-23 \
 M-24
