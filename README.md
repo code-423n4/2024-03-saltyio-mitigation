@@ -74,6 +74,7 @@ Wherever possible, mitigations should be provided in separate pull requests, one
 | URL | Mitigation of | Purpose | 
 | ----------- | ------------- | ----------- |
 | https://github.com/othernet-global/salty-io/commit/5766592880737a5e682bb694a3a79e12926d48a5 | H-01 | ManagedWallet has been removed. VestingWallet now just vests directly to teamWallet. | 
+| https://github.com/othernet-global/salty-io/commit/4f0c9c6a6e3e4234135ab7119a0e380af3e9776c |H-02| performUpkeep is now called at the start of BootstrapBallot.finalizeBallot to reset the emissions timers just before liquidity rewards claiming is started.|
 
 ## Out of Scope
 
