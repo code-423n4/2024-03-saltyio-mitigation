@@ -75,6 +75,7 @@ Wherever possible, mitigations should be provided in separate pull requests, one
 | ----------- | ------------- | ----------- |
 | https://github.com/othernet-global/salty-io/commit/5766592880737a5e682bb694a3a79e12926d48a5 | H-01 | ManagedWallet has been removed. VestingWallet now just vests directly to teamWallet. | 
 | https://github.com/othernet-global/salty-io/commit/4f0c9c6a6e3e4234135ab7119a0e380af3e9776c |H-02| performUpkeep is now called at the start of BootstrapBallot.finalizeBallot to reset the emissions timers just before liquidity rewards claiming is started.|
+| https://github.com/othernet-global/salty-io/commit/88b7fd1f3f5e037a155424a85275efd79f3e9bf9 | H-03 | The stablecoin framework: /stablecoin, /price_feed, WBTC/WETH collateral, PriceAggregator, price feeds and USDS have been removed:|
 
 ## Out of Scope
 
