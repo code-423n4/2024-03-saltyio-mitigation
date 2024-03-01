@@ -1,5 +1,5 @@
 # Salty.IO - Mitigation Review details
-- Total Prize Pool: $25,000 in USDC 
+- Total Prize Pool: $30,000 in USDC 
 - [Warden guidelines for C4 mitigation reviews](https://code4rena.notion.site/Guidelines-for-C4-mitigation-reviews-ed10fc5cfbf640bd8dcec66f38b343c4)
 - Submit findings [using the C4 form](https://code4rena.com/contests/2024-03-saltyio-mitigation-review/submit)
 - Starts March 1, 20:00 UTC
@@ -55,22 +55,13 @@ Mitigations of all High and Medium issues will be considered in-scope and listed
 - [M-31: changeWallets() can be confirmed immediately after proposalWallets() by manipulating activeTimelock beforehand](https://github.com/code-423n4/2024-01-salty-findings/issues/49)
 
 
-[ ⭐️ SPONSORS ADD INFO HERE ]
+
 
 ## Overview of changes
 
 Please provide context about the mitigations that were applied if applicable and identify any areas of specific concern.
 
 ## Mitigations to be reviewed
-
-### Branch
-[ ⭐️ SPONSORS ADD A LINK TO THE BRANCH IN YOUR REPO CONTAINING ALL PRS ]
-
-### Individual PRs
-[ ⭐️ SPONSORS ADD ALL RELEVANT PRs TO THE TABLE BELOW:]
-
-Wherever possible, mitigations should be provided in separate pull requests, one per issue. If that is not possible (e.g. because several audit findings stem from the same core problem), then please link the PR to all relevant issues in your findings repo. 
-
 | URL | Mitigation of | Purpose | 
 | ----------- | ------------- | ----------- |
 | https://github.com/othernet-global/salty-io/commit/5766592880737a5e682bb694a3a79e12926d48a5 | H-01 | ManagedWallet has been removed. VestingWallet now just vests directly to teamWallet. | 
