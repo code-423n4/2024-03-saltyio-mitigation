@@ -115,7 +115,7 @@ M-17 \
 M-23 \
 M-24
 
-## Additional Scope
+## Additional scope to be reviewed
 
 ### Individual PRs
 
