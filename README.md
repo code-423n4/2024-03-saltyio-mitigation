@@ -7,7 +7,7 @@
 
 ## Important note 
 
-Each warden must submit a mitigation review for *every High and Medium finding* from the parent audit that is listed as in-scope for the mitigation review. **Incomplete mitigation reviews will not be eligible for awards.**
+Each warden must submit a mitigation review for *every High and Medium finding* from the parent audit that is listed as in-scope for the mitigation review along with the *Additional Scope to be Reviewed* section.  **Incomplete mitigation reviews will not be eligible for awards.**
 
 ## Findings being mitigated
 
@@ -110,14 +110,6 @@ Users are now limited to one swap per block due to an issue found in which arbit
 | https://github.com/othernet-global/salty-io/commit/8e3231d3f444e9851881d642d6dd03021fade5ed | M-30 | The stablecoin framework has been removed: /stablecoin, /price_feed, WBTC/WETH collateral, PriceAggregator, price feeds and USDS.|
 | https://github.com/othernet-global/salty-io/commit/5766592880737a5e682bb694a3a79e12926d48a5 | M-31 | ManagedWallet has been removed. |
 
-## Out of Scope
-
-Please list any High and Medium issues that were judged as valid but you have chosen not to fix. \
-M-10 \
-M-17 \
-M-23 \
-M-24
-
 ## Additional scope to be reviewed
 
 ### Individual PRs
@@ -131,3 +123,11 @@ These are additional changes that will be in scope and were addressed outside of
 | https://github.com/othernet-global/salty-io/commit/60de2c02bcfbcc64b41c03ea0582ec9e7a3f332a | Gas stabilization by preventing overwriting zeros after performUpkeep | 
 | https://github.com/othernet-global/salty-io/commit/6998661013e86a50c7db552d189fadb0521dbeb0 | Fixes arbitrage revert when there is zero SALT/WETH liquidity | 
 | https://github.com/othernet-global/salty-io/commit/2d1b7df004394720c0d8bb4aefe903021631eff3 | Limited user swaps to one per block to prevent bypassing arbitrage within a single block | 
+
+## Out of Scope
+
+Please list any High and Medium issues that were judged as valid but you have chosen not to fix. \
+M-10 \
+M-17 \
+M-23 \
+M-24
