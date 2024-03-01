@@ -3,7 +3,7 @@
 - [Warden guidelines for C4 mitigation reviews](https://code4rena.notion.site/Guidelines-for-C4-mitigation-reviews-ed10fc5cfbf640bd8dcec66f38b343c4)
 - Submit findings [using the C4 form](https://code4rena.com/contests/2024-03-saltyio-mitigation-review/submit)
 - Starts March 1, 20:00 UTC
-- Ends March 8, 20:00 UTC
+- Ends March 11, 20:00 UTC
 
 ## Important note 
 
