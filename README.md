@@ -59,7 +59,19 @@ Mitigations of all High and Medium issues will be considered in-scope and listed
 
 ## Overview of changes
 
-Please provide context about the mitigations that were applied if applicable and identify any areas of specific concern.
+To decrease the risk profile of the exchange and focus on the core features provided by automatic arbitrage, the USDS stablecoin and all associated functionality (price feeds, collateral, liquidizer, etc) have been completely removed.  The stablecoin was largely isolated from the rest of the project, but this did refactor the way Upkeep works.
+
+Resulting from the stablecoin being removed all tokens are now paired with WETH and USDC rather than WETH and WBTC (which was previously done to provide increased yield for now removed collateral).
+
+Also, the ManagedWallet contract has been removed - with the teamVestingWallet now targeting a simple teamWallet address.
+
+To prevent any swaps from occurring during performUpkeep, Protocol Owned Liquidity has been removed.  Additionally, on user swap any WETH profits that are generated are swapped immediately to SALT - rather than being done in performUpkeep.
+
+In response to a suggestion by one of the wardens in the original competition, the ArbitrageSearch mechanism has been refactored and optimized extensively:
+	https://github.com/code-423n4/2024-01-salty-findings/issues/419
+
+Users are now limited to one swap per block due to an issue found in which arbitrage could be bypassed by dividing up individual swaps into tens or hundreds of swaps. Without the limitation and due to the protocol's reletively low gas costs for swap and arbitrage, attackers would otherwise be able to perform multiple swaps in one transaction - effectively bypassing arbitrage and the rebalancing done that discourages manipulation. While multiple wallets could still be used on such an attack, the gas costs incurred on the multiple separate swap transactions are considered a sufficient deterrent.
+
 
 ## Mitigations to be reviewed
 | URL | Mitigation of | Purpose | 
