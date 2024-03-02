@@ -114,15 +114,15 @@ Users are now limited to one swap per block due to an issue found in which arbit
 
 ### Individual PRs
 
-These are additional changes that will be in scope and were addressed outside of direct mitigation.
+These are additional changes that will be in scope and were addressed outside of direct mitigation. (EXTRA Scoope)
 
-| URL | Purpose | 
-| ----------- | ----------- |
-| https://github.com/othernet-global/salty-io/commit/f16623e6bf1cdb0845b83ebf3592e30885a8fc61 | Arbitrage no longer occurs when zapping liquidity | 
-| https://github.com/othernet-global/salty-io/commit/75901cae57382a87b5f049d7afb9c5d9b9ba4c19 https://github.com/othernet-global/salty-io/commit/7de25bca740332ae7a4b2f25c3a6f6419eaa7569 | Arbitrage gas optimization | 
-| https://github.com/othernet-global/salty-io/commit/60de2c02bcfbcc64b41c03ea0582ec9e7a3f332a | Gas stabilization by preventing overwriting zeros after performUpkeep | 
-| https://github.com/othernet-global/salty-io/commit/6998661013e86a50c7db552d189fadb0521dbeb0 | Fixes arbitrage revert when there is zero SALT/WETH liquidity | 
-| https://github.com/othernet-global/salty-io/commit/2d1b7df004394720c0d8bb4aefe903021631eff3 | Limited user swaps to one per block to prevent bypassing arbitrage within a single block | 
+| URL | Mitigation of | Purpose | 
+| ----------- | ----------- |----------- |
+| https://github.com/othernet-global/salty-io/commit/f16623e6bf1cdb0845b83ebf3592e30885a8fc61 | E1 | Arbitrage no longer occurs when zapping liquidity | 
+| https://github.com/othernet-global/salty-io/commit/75901cae57382a87b5f049d7afb9c5d9b9ba4c19 https://github.com/othernet-global/salty-io/commit/7de25bca740332ae7a4b2f25c3a6f6419eaa7569 | E2 | Arbitrage gas optimization | 
+| https://github.com/othernet-global/salty-io/commit/60de2c02bcfbcc64b41c03ea0582ec9e7a3f332a | E3 | Gas stabilization by preventing overwriting zeros after performUpkeep | 
+| https://github.com/othernet-global/salty-io/commit/6998661013e86a50c7db552d189fadb0521dbeb0 | E4 | Fixes arbitrage revert when there is zero SALT/WETH liquidity | 
+| https://github.com/othernet-global/salty-io/commit/2d1b7df004394720c0d8bb4aefe903021631eff3 | E5 | Limited user swaps to one per block to prevent bypassing arbitrage within a single block | 
 
 ## Out of Scope
 
